@@ -1,12 +1,13 @@
 package com.lj.pluginapk;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class PluginActivity extends AppCompatActivity {
+import com.lj.pluginlib.ProxyActivity;
+
+public class PluginActivity extends ProxyActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plugin);
     }
