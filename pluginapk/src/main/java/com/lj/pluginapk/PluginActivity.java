@@ -10,5 +10,7 @@ public class PluginActivity extends ProxyActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plugin);
+
     }
+
 }

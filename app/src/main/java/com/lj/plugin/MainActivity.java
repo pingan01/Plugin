@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        PluginManager.getInstance().init(this);
+
         findViewById(R.id.btn1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -25,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
                 String path = null;
                 try {
-                    path = Utils.copyAssetAndWrite(MainActivity.this,"");
+                    path = Utils.copyAssetAndWrite(MainActivity.this, "pp.apk");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
